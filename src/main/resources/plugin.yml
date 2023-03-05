@@ -1,0 +1,9 @@
+main: inspector.packet.custom.gui.App
+name: custom_gui
+version: 1.0
+description: Custom GUI
+api-version: 1.19
+load: STARTUP
+author: inspectorpacket
+website: github.com/inspector-packet/custom_gui
+prefix: CUSTOM GUI

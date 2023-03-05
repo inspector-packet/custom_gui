@@ -1,0 +1,104 @@
+#
+#
+# CUSTOM GUI
+#
+#
+# Use the symbol   §   to add Color to Text/Strings
+#
+#
+# GUI SETTINGS
+GUI:
+#
+#
+# =========================   COMMAND   =========================
+# - In-Game Command to Open the GUI
+# - Must be a Unique Command to the Minecraft Server
+# - Don't forget the / before the command name
+#
+  COMMAND: /gui
+#
+#
+# =========================   DESCRIPTION   =========================
+# - In-Game Command Description for the Command
+# - This will appear in /help next to the Command
+#
+  DESCRIPTION: A Custom GUI Command
+#
+#
+# =========================   PERMISSION   =========================
+# - In-Game Permission for the Command
+#
+  PERMISSION: custom.gui
+#
+#
+# =========================   DEFAULT_PERMISSION_VALUE   =========================
+# - Default Permission Value to Use the Command for All Players
+# - true = anyone can use the command by default
+# - false = no one can use the command by default
+#
+  DEFAULT_PERMISSION_VALUE: true
+#
+#
+# =========================   SIZE   =========================
+# - Size of the GUI
+# - Each Row that displays in the GUI has 9 Slots
+# - THIS CAN ONLY BE A NUMBER
+#
+#
+  SIZE: 45
+#
+#
+# =========================   TITLE   =========================
+# - Title of the GUI
+# - This Appears at the Top of the GUI
+#
+  TITLE: Custom GUI
+#
+#
+# ITEM SETTINGS
+  ITEMS:
+#
+#
+# =========================   ITEM   =========================
+# - Item that Displays in the GUI
+# - ITEM MUST EXIST IN THE URL BELOW
+# - https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+# - MUST BE FORMATTED EXACTLY AS FOUND IN THE URL ABOVE
+#
+# =========================   NAME   =========================
+# - Name that Displays for the Item
+# - Message Appears when Item is being hovered over
+#
+# =========================   DESCRIPTION   =========================
+# - Description of the Item
+# - Message Appears when Item is being hovered on
+#
+# =========================   SLOT_NUMBER   =========================
+# - Number of Slot the Item will Appear In
+# - Slot Numbering starts at the top left and starts with 0
+# - MUST BE ONLY A NUMBER
+#
+# =========================   COMMAND   =========================
+# - Command to Execute in Console when Item is Clicked
+# - MUST BE A COMMAND THE CONSOLE CAN EXECUTE
+# - Use %player% to get the Player Name that sent the command
+#
+#
+    INSPECTOR:
+      ITEM: DIRT
+      NAME: §6DIRT
+      DESCRIPTION: Click to get a piece of Dirt
+      SLOT_NUMBER: 20
+      COMMAND: give %player% minecraft:dirt 1
+    PACKET:
+      ITEM: BEDROCK
+      NAME: §7NOTHING
+      DESCRIPTION: Say Nothing
+      SLOT_NUMBER: 22
+      COMMAND: say nothing
+    GITHUB:
+      ITEM: COBBLESTONE
+      NAME: §7COBBLESTONE
+      DESCRIPTION: Click to get a piece of Cobblestone
+      SLOT_NUMBER: 24
+      COMMAND: give %player% minecraft:cobblestone 1
